@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+	background-color: #2C3258;
+}
+
+/* Card background Login */
+.login-box{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:560px;
+	position:relative;
+	background:url(../img/background-login.jpg) no-repeat center;
+	background-size: 100%;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	border-radius: 6px;
+}
+.login-snip{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:60px 70px 60px 70px;
+	background:rgba(44, 50, 88,.9);
+	border-radius: 5px;
+}
+
+
+/* Animated input */
+.login-box .user-box {
+  position: relative;
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #ACE4FC;
+  font-size: 12px;
+}
+
+/* Sigin mostrar contraseña */
+.password-icon {
+  float: right;
+  position: absolute;
+  top:50%;
+  right: 0;
+  margin: -25px 10px 0 0;
+  cursor: pointer;
+}
+
+/* Mensaje de error */
+.error-mensaje {
+    text-align: center;
+    color: #FF0000;
+}
+/* Navbar */
+.v-line {
+    background-color: gray;
+    width: 1px;
+    height: 20px;
+}
+.bg-black-2{
+  background-color: #101532;
+}
+
+/* Progress bar*/
+.progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.border-void{
+  border-color: #E04FD9!important;
+}
+
+/* Hover title terms and policy */
+.border-2:hover {
+    border-width: 3px!important;
+}
